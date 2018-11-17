@@ -29,6 +29,17 @@ export default {
   components: {
     Logo
   },
+  head() {
+    return {
+      title: 'Home page',
+      metas: [
+        { name: 'twitter:title', content: 'Nuxt Fundamentals' },
+        { name: 'twitter:description', content: ' vue is love <3' },
+        { name: 'tiwtter:image', content: 'https://i.imgur.com/PzEm5j2.png' },
+        { name: 'twitter:card', content: 'sumary_large_image' }
+      ]
+    }
+  },
   computed: {
     posts() {
       return this.$store.state.posts.all

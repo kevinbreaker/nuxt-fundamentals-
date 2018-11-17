@@ -23,6 +23,17 @@ export default {
   data: () => ({
     id: 'vuejs'
   }),
+  head() {
+    return {
+      title: this.post.title,
+      metas: [
+        { name: 'twitter:title', content: this.post.title },
+        { name: 'twitter:description', content: this.post.content },
+        { name: 'tiwtter:image', content: 'https://i.imgur.com/PzEm5j2.png' },
+        { name: 'twitter:card', content: 'sumary_large_image' }
+      ]
+    }
+  },
   computed: {
     post() {
       return this.$store.state.posts.all.find(post => post.id === this.id)
