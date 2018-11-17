@@ -18,7 +18,7 @@ export const state = () => ({
     },
     {
       id: 'nativescript-vue',
-      title: 'wha is nativescript-vue ?',
+      title: 'what is nativescript-vue ?',
       content: `NativeScript-Vue is a NativeScript plugin which allows you to use Vue.js to craft your mobile application. If you have used Vue.js before you will feel right at home with NativeScript-Vue.`
     }
   ]
